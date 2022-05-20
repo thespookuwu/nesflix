@@ -1,0 +1,225 @@
+:root {
+	--rojo: #E50914;
+	--fondo: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 40px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+
+.pelicula-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/backdrop.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principal .boton i {
+	margin-right: 1.25em;
+}
+
+
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+
+	
+	
+}
+.grid-container {
+	display: grid;
+	justify-content: space-evenly;
+	grid-template-columns: 50px 50px 50px; 
+	gap: 10px;
+	background-color: #000000;
+	padding: 10px;
+  }
+  
+  .grid-container > div {
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 20px 0;
+	font-size: 20px;
+	color: white;
+	text-align: justify;
+  }
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+	background-color: rgb(70, 66, 66);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(70, 66, 66);
+	margin-left: 200%;
+	transform: translateX(-50%);
+	
+}
+
+.button1:hover {background-color: #ff0000;}
+
+.button2 {
+	background-color: rgb(70, 66, 66);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(70, 66, 66);
+	margin-left: 200%;
+	transform: translateX(-50%);
+	
+}
+
+.button2:hover {background-color: #ff0000;}
+
+.button3 {
+    background-color: rgb(70, 66, 66);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(70, 66, 66);
+	margin-left: 200%;
+	transform: translateX(-50%);
+}
+
+.button3:hover {background-color: #ff0000;}
+
+.button4 {
+	background-color: rgb(70, 66, 66);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(70, 66, 66);
+	margin-left: 200%;
+	transform: translateX(-50%);
+}
+
+.button4:hover {background-color: #ff0000;}
+
+.button5 {
+    background-color: rgb(70, 66, 66);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(70, 66, 66);
+	margin-left: 200%;
+	transform: translateX(-50%);
+
+}
+
+.button5:hover {background-color: #ff0000;}
+
+.button6 {
+    background-color: rgb(70, 66, 66);
+    color: rgb(255, 255, 255);
+    border: 2px solid #3f3f3f;
+	width: 110px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+	margin-left: 200%;
+	transform: translateX(-50%);
+
+	
+}
+
+.button6:hover {background-color: #ff0000;}
+
+h6{
+	padding-left: 80px;
+	text-align: center;
+}
